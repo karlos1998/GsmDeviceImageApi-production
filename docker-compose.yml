@@ -3,7 +3,7 @@ services:
   myapp:
     build: .
     ports:
-      - "80"
+      - "${HTTP_PORT:8061}:80"
     depends_on:
       - mongodb
 #    environment:
