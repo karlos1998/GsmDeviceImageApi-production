@@ -3,9 +3,11 @@ services:
   myapp:
     build: .
     ports:
-      - "8080:8080"
+      - "8080"
     depends_on:
       - mongodb
+    environment:
+      - VIRTUAL_HOST=gsm-devices-api.letscode.it
 
   mongodb:
     image: 'mongo:4.4.6'
