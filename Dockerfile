@@ -2,7 +2,7 @@
 FROM openjdk:21-oracle
 
 # Add Maintainer Info
-LABEL maintainer="your-email@example.com"
+LABEL maintainer="kontakt@letscode.it"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
