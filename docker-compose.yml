@@ -11,16 +11,14 @@ services:
       - VIRTUAL_PORT=8080
     networks:
       - nginx-proxy
+      - private_network
 
   mongodb:
     image: 'mongo:4.4.6'
-#    environment:
-#      - 'MONGO_INITDB_DATABASE=mydatabase'
-#      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
-#      - 'MONGO_INITDB_ROOT_USERNAME=root'
-#    ports:
-#      - '27017'
+    networks:
+      - private_network
 
 networks:
+  private_network:
   nginx-proxy:
     external: true
