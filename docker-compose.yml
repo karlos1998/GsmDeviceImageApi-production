@@ -10,6 +10,7 @@ services:
       - VIRTUAL_HOST=gsm-devices-api.letscode.it
       - VIRTUAL_PORT=8080
 
+  mongodb:
     image: 'mongo:4.4.6'
 #    environment:
 #      - 'MONGO_INITDB_DATABASE=mydatabase'
