@@ -6,8 +6,8 @@ services:
       - "80"
     depends_on:
       - mongodb
-    environment:
-      - VIRTUAL_HOST=gsm-devices-api.letscode.it
+#    environment:
+#      - VIRTUAL_HOST=gsm-devices-api.letscode.it
 
   mongodb:
     image: 'mongo:4.4.6'
