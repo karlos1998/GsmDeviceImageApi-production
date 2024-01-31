@@ -9,6 +9,8 @@ services:
     environment:
       - VIRTUAL_HOST=gsm-devices-api.letscode.it
       - VIRTUAL_PORT=8080
+    networks:
+      - nginx-proxy
 
   mongodb:
     image: 'mongo:4.4.6'
